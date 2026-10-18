@@ -1,0 +1,52 @@
+<!-- Search form -->
+    <section id="booking" class="relative z-10 mx-auto -mt-8 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft sm:p-7">
+        <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+          <div><p class="text-xs font-bold uppercase tracking-widest text-slate-500">Start planning</p><h2 class="mt-1 text-2xl font-extrabold text-ink">Search flights</h2></div>
+          <span class="rounded-full bg-sky px-3 py-1.5 text-xs font-semibold text-navy">Demo booking system</span>
+        </div>
+        <form id="searchForm" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12">
+          <div class="lg:col-span-2">
+            <label for="tripType" class="mb-1.5 block text-sm font-semibold">Trip type</label>
+            <select id="tripType" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm focus:border-blue-500">
+              <option value="round">Round trip</option><option value="oneway">One way</option>
+            </select>
+          </div>
+          <div class="lg:col-span-2">
+            <label for="origin" class="mb-1.5 block text-sm font-semibold">From</label>
+            <select id="origin" required class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm">
+              <option value="CEB">Cebu (CEB)</option><option value="MNL">Manila (MNL)</option><option value="DVO">Davao (DVO)</option><option value="ILO">Iloilo (ILO)</option><option value="SIN">Singapore (SIN)</option><option value="NRT">Tokyo (NRT)</option>
+            </select>
+          </div>
+          <div class="flex items-end justify-center lg:col-span-1">
+            <button type="button" id="swapAirports" class="mb-0.5 rounded-xl border border-slate-200 p-3 text-navy hover:bg-sky" aria-label="Swap departure and destination">⇄</button>
+          </div>
+          <div class="lg:col-span-2">
+            <label for="destination" class="mb-1.5 block text-sm font-semibold">To</label>
+            <select id="destination" required class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm">
+              <option value="MNL">Manila (MNL)</option><option value="CEB">Cebu (CEB)</option><option value="DVO">Davao (DVO)</option><option value="ILO">Iloilo (ILO)</option><option value="SIN">Singapore (SIN)</option><option value="NRT">Tokyo (NRT)</option>
+            </select>
+          </div>
+          <div class="lg:col-span-2">
+            <label for="departDate" class="mb-1.5 block text-sm font-semibold">Departure</label>
+            <input id="departDate" type="date" required class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm" />
+          </div>
+          <div id="returnField" class="lg:col-span-2">
+            <label for="returnDate" class="mb-1.5 block text-sm font-semibold">Return</label>
+            <input id="returnDate" type="date" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm" />
+          </div>
+          <div class="sm:col-span-1 lg:col-span-3">
+            <label for="passengers" class="mb-1.5 block text-sm font-semibold">Passengers</label>
+            <select id="passengers" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm"><option value="1">1 passenger</option><option value="2">2 passengers</option><option value="3">3 passengers</option><option value="4">4 passengers</option><option value="5">5 passengers</option><option value="6">6 passengers</option></select>
+          </div>
+          <div class="sm:col-span-1 lg:col-span-3">
+            <label for="cabin" class="mb-1.5 block text-sm font-semibold">Cabin class</label>
+            <select id="cabin" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm"><option>Economy</option><option>Premium Economy</option><option>Business</option><option>First Class</option></select>
+          </div>
+          <div class="sm:col-span-2 lg:col-span-6 lg:flex lg:items-end">
+            <button type="submit" class="w-full rounded-xl bg-navy px-5 py-3.5 font-bold text-white transition hover:bg-slate-700">Search available flights <span aria-hidden="true">→</span></button>
+          </div>
+          <p id="searchError" class="hidden sm:col-span-2 lg:col-span-12 text-sm font-medium text-red-600" role="alert"></p>
+        </form>
+      </div>
+    </section>

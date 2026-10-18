@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkyBook demo flight booking website built with HTML, Tailwind CSS, and JavaScript." />
+  <title>SkyBook — Flight Booking</title>
+  <!-- Project files are organized into css/ and js/ folders. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+   
+  </script>
+
+</head>
+<body class="bg-white text-slate-700">
+  <!-- Each page section lives in its own file under partials/. -->
+  <div data-include="Pages/navigation.html"></div>
+  <main>
+    <div data-include="Pages/hero.html"></div>
+    <div data-include="Pages/search-form.html"></div>
+    <div data-include="Pages/booking-workflow.html"></div>
+    <div data-include="Pages/features.html"></div>
+    <div data-include="Pages/about.html"></div>
+  </main>
+  <div data-include="Pages/footer.html"></div>
+  <div data-include="Pages/modal.html"></div>
+  <script src="js/load-pages.js"></script>
+</body>
+</html>

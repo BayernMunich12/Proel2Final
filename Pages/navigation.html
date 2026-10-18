@@ -1,0 +1,27 @@
+<!-- Navigation -->
+  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-2 text-xl font-extrabold tracking-tight text-navy">
+        <span class="grid h-9 w-9 place-items-center rounded-xl bg-mint text-navy">✈</span> SkyBook
+      </a>
+      <button id="menuToggle" class="rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold md:hidden" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      <div class="hidden items-center gap-7 text-sm font-medium md:flex">
+        <a class="nav-link hover:text-blue-700" href="#home">Home</a>
+        <a class="nav-link hover:text-blue-700" href="#features">Features</a>
+        <a class="nav-link hover:text-blue-700" href="#booking">Book Flights</a>
+        <button id="navBookings" class="hover:text-blue-700">My Bookings</button>
+        <a class="nav-link hover:text-blue-700" href="#about">About Us</a>
+      </div>
+      <div class="hidden items-center gap-2 md:flex">
+        <button id="signInBtn" class="rounded-xl px-4 py-2 text-sm font-semibold text-navy hover:bg-slate-100">Sign in</button>
+        <button id="signUpBtn" class="rounded-xl bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700">Sign up</button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-4 py-3 md:hidden">
+      <div class="flex flex-col gap-3 text-sm font-medium">
+        <a href="#home">Home</a><a href="#features">Features</a><a href="#booking">Book Flights</a>
+        <button id="mobileBookings" class="text-left">My Bookings</button><a href="#about">About Us</a>
+        <div class="flex gap-2"><button id="mobileSignIn" class="rounded-lg border px-3 py-2">Sign in</button><button id="mobileSignUp" class="rounded-lg bg-navy px-3 py-2 text-white">Sign up</button></div>
+      </div>
+    </div>
+  </header>
